@@ -1,4 +1,4 @@
-local Library = {}
+ local Library = {}
 
 function MainFunction(Text)
 	local Squiddy = Instance.new("ScreenGui")
