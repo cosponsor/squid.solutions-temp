@@ -1,9 +1,8 @@
---Settings--
 local ESP = {
     Enabled = false,
     Boxes = true,
     BoxShift = CFrame.new(0,-1.5,0),
-	  BoxSize = Vector3.new(4,6,0),
+	BoxSize = Vector3.new(4,6,0),
     Color = Color3.fromRGB(255, 97, 97),
     FaceCamera = false,
     Names = true,
@@ -225,13 +224,13 @@ function boxBase:Update()
         if Vis5 then
             self.Components.Name.Visible = true
             self.Components.Name.Position = Vector2.new(TagPos.X, TagPos.Y)
-	    self.Components.Name.Font = 3
             self.Components.Name.Text = self.Name
             self.Components.Name.Color = color
-            
+            self.Components.Name.Font = 3
             self.Components.Distance.Visible = true
             self.Components.Distance.Position = Vector2.new(TagPos.X, TagPos.Y + 14)
             self.Components.Distance.Text = math.floor((cam.CFrame.p - cf.p).magnitude) .."m away"
+            self.Components.Distance.Font = 3
             self.Components.Distance.Color = color
         else
             self.Components.Name.Visible = false
@@ -292,7 +291,6 @@ function ESP:Add(obj, options)
     box.Components["Name"] = Draw("Text", {
 		Text = box.Name,
 		Color = box.Color,
-		Font = 3
 		Center = true,
 		Outline = true,
         Size = 19,
