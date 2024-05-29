@@ -225,7 +225,7 @@ function boxBase:Update()
         if Vis5 then
             self.Components.Name.Visible = true
             self.Components.Name.Position = Vector2.new(TagPos.X, TagPos.Y)
-	    self.Components.Name.Font = Drawing.Fonts.Monospace
+	    self.Components.Name.Font = 3
             self.Components.Name.Text = self.Name
             self.Components.Name.Color = color
             
@@ -292,7 +292,7 @@ function ESP:Add(obj, options)
     box.Components["Name"] = Draw("Text", {
 		Text = box.Name,
 		Color = box.Color,
-		Font = Drawing.Fonts.MonoSpace
+		Font = 3
 		Center = true,
 		Outline = true,
         Size = 19,
