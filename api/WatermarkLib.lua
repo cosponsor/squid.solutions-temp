@@ -21,7 +21,7 @@ function MainFunction(Text)
 	local UITextSizeConstraint = Instance.new("UITextSizeConstraint")
 	local UIAspectRatioConstraint = Instance.new("UIAspectRatioConstraint")
 	Squiddy.Name = "Squid !"
-	Squiddy.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+	Squiddy.Parent = game:GetService("CoreGui")
 	Squiddy.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
 	Squiddy.DisplayOrder = 999999999
 	TextLabel.Parent = Squiddy
